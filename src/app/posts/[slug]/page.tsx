@@ -48,7 +48,8 @@ export async function generateMetadata(params: Params): Promise<Metadata> {
       title: post.title,
       description: post.description,
       images: absoluteUrl(post?.coverImage || '/images/og-image.png')
-    }
+    },
+    audioLink: post?.audioLink,
   }
 }
 
@@ -110,7 +111,8 @@ async function getData({ params }: Params) {
       'author',
       'content',
       'coverImage',
-      'tags'
+      'tags',
+      'audioLink'
     ])
     .first()
 
