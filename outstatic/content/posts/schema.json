@@ -22,6 +22,13 @@
           "label": "Outstatic"
         }
       ]
+    },
+    "audioLink": {
+      "required": false,
+      "description": "",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Audio Link"
     }
   }
 }
